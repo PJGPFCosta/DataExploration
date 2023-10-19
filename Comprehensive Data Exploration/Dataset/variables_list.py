@@ -1,0 +1,85 @@
+# variables_lists.py
+
+# Variables related to Building
+building_variables = [
+    'MSSubClass',
+    'OverallQual',
+    'OverallCond',
+    'YearBuilt',
+    'YearRemodAdd',
+    'RoofStyle',
+    'RoofMatl',
+    'Exterior1st',
+    'Exterior2nd',
+    'MasVnrType',
+    'MasVnrArea',
+    'ExterQual',
+    'ExterCond',
+    'Foundation',
+    'BsmtQual',
+    'BsmtCond',
+    'BsmtExposure',
+    'BsmtFinType1',
+    'BsmtFinSF1',
+    'BsmtFinType2',
+    'BsmtFinSF2',
+    'BsmtUnfSF',
+    'TotalBsmtSF',
+    'Heating',
+    'HeatingQC',
+    'CentralAir',
+    'Electrical',
+    '1stFlrSF',
+    '2ndFlrSF',
+    'LowQualFinSF',
+    'GrLivArea',
+    'BsmtFullBath',
+    'BsmtHalfBath',
+    'FullBath',
+    'HalfBath',
+    'BedroomAbvGr',
+    'KitchenAbvGr',
+    'KitchenQual',
+    'TotRmsAbvGrd',
+    'Functional',
+    'Fireplaces',
+    'FireplaceQu',
+    'GarageType',
+    'GarageYrBlt',
+    'GarageFinish',
+    'GarageCars',
+    'GarageArea',
+    'GarageQual',
+    'GarageCond',
+    'PavedDrive',
+    'WoodDeckSF',
+    'OpenPorchSF',
+    'EnclosedPorch',
+    '3SsnPorch',
+    'ScreenPorch',
+    'PoolArea',
+    'PoolQC',
+    'Fence',
+    'MiscFeature',
+    'MiscVal'
+]
+
+# Variables related to Space
+space_variables = [
+    'LotFrontage',
+    'LotArea',
+    'LotConfig',
+    'LandSlope',
+    'LandContour',
+    'LotShape',
+    'Street',
+    'Alley'
+]
+
+# Variables related to Location
+location_variables = [
+    'MSZoning',
+    'Neighborhood',
+    'Condition1',
+    'Condition2'
+]
