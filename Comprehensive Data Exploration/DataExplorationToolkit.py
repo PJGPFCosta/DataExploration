@@ -81,3 +81,27 @@ def most_important_features(df,target,num_features,list_to_drop):
     common_values_list.insert(0, target)
 
     return common_values_list
+
+
+def return_categorical_numerical_columns(df,cat_col_forced=[],max_value_for_categorical=20):
+
+
+    """
+    Returns the column names of the numerical and categorical columns.
+    You can pass the names of the categorical columns that are like "1,2,3,4,.." and it represents levels 
+
+    Args:
+        df: Input DataFrame.
+        cat_col_forced: Input list of the categorical columns.
+        max_value_for_categorical: Input Number of values in the column that can be considerer categorical and not numeric
+        
+
+    Returns:
+        list: List of categorical and numerical columns. [categorical_cols,numerical_cols]
+    """
+    # Separate categorical and numerical columns
+
+    numerical_cols= [col for col in df.columns if df[col].dtype in ["int64", "float64"] and col not in cat_col_forced and df[col].nunique() > max_value_for_categorical]
+    categorical_cols = [col for col in df.columns if col not in numerical_cols]
+
+    return categorical_cols,numerical_cols
